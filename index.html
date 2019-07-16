@@ -40,7 +40,7 @@
                 document.getElementById('prev').onclick = function() {
                     num.textContent = number - add;
                     number -= add;
-                    if (num.textContent > 20 || num.textContent < 1) {
+                    if (num.textContent > 20 || num.textContent < 0) {
                         audio.style.display="none";
                     }
                     else audio.style.display="block";
@@ -48,7 +48,7 @@
             document.getElementById('next').onclick = function() {
                     num.textContent = number + add;
                     number += add;
-                    if (num.textContent > 20 || num.textContent < 1) {
+                    if (num.textContent > 20 || num.textContent < 0) {
                         audio.style.display="none";
                     }
                     else audio.style.display="block";
@@ -62,7 +62,7 @@
                     number = 0;
                 }
                 num.textContent = number;
-                if (num.textContent > 20 || num.textContent < 1) {
+                if (num.textContent > 20 || num.textContent < 0) {
                         audio.style.display="none";
                     }
                     else audio.style.display="block";
@@ -78,6 +78,7 @@
 // Images By IconFinder
 var num = document.getElementById('num');
 var ttsvar = [
+    "https://papago.naver.com/apis/tts/1.11.10_46969-23f95674e5681818538a2d62b99c2827-1563284097159",
     "https://papago.naver.com/apis/tts/1.11.10_37398-37d5cefc36fa860e5c0195aa4cf2d02e-1563279334659",
     'https://papago.naver.com/apis/tts/1.11.10_45425-217d5bc92f4a1b6e1a871ca7203018ae-1563279336899',
     "https://papago.naver.com/apis/tts/1.11.10_34328-6ad2cdd0bc3b7fc2d5f9682d4d71ffcd-1563279339573",
